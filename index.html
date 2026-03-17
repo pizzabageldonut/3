@@ -412,21 +412,52 @@
     </div>
 </div>
 
-<div class="modal" id="info-modal" style="display:block;">
-    <div class="modal-content" style="text-align:left;">
-        <p style="text-align:center; font-size:1.2rem; margin-bottom:10px;">🍕 🥯 🍩</p>
-        <h2 style="color:var(--sauce); text-transform:uppercase; letter-spacing:1px; font-size:1.1rem; text-align:center; margin-bottom:5px;">Welcome to the Pizza Bagel Donut Game!</h2>
-        
-        <p style="font-size:0.95rem; font-weight:700; margin:15px 0 5px 0; text-align:center;">How to Play</p>
-        <p style="font-size:0.85rem; color:#555; text-align:center; line-height:1.4; margin-bottom: 15px;">
-            Crack the secret code in <strong>8 tries</strong>. Easy uses 3 digits, Medium uses 4, and Hard uses 5. All numbers are unique.
-        </p>
+<div style="background:#fff; border:1px solid var(--border); border-radius:6px; padding:14px; margin:14px 0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; text-align:center;">
+    
+    <p style="margin:0 0 10px 0; font-size:0.85rem; font-weight:800; color:var(--sauce);">
+        Example
+    </p>
 
-        <div style="margin:10px 0; border-top:1px solid #eee; padding-top:10px;">
-            <div class="rule-line"><span>🍕</span> <span><strong>PIZZA:</strong> A number is correct and in the right spot.</span></div>
-            <div class="rule-line"><span>🥯</span> <span><strong>BAGEL:</strong> A number is correct, but in the wrong spot.</span></div>
-            <div class="rule-line"><span>🍩</span> <span><strong>DONUT:</strong> A number is not in the code at all.</span></div>
+    <p style="font-size:0.85rem; font-weight:700; margin-bottom:8px;">
+        Answer: 507
+    </p>
+
+    <!-- Guess + Result Row -->
+    <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:12px;
+        background:#fff;
+        border:1px solid var(--border);
+        border-radius:6px;
+        padding:10px 14px;
+        max-width:260px;
+        margin:0 auto 10px auto;
+    ">
+        <div style="font-size:0.75rem; color:#777; font-weight:700;">
+            GUESS
         </div>
+
+        <div style="font-size:1rem; font-weight:800; letter-spacing:4px;">
+            0 6 7
+        </div>
+
+        <div style="font-size:1.1rem;">
+            🍕 🥯 🍩
+        </div>
+    </div>
+
+    <p style="margin:0; font-size:0.8rem; color:#444; line-height:1.5;">
+        • <strong>7</strong> is correct and in the right spot → 🍕  
+        <br>• <strong>0</strong> is in the code but in the wrong spot → 🥯  
+        <br>• <strong>6</strong> is not in the code → 🍩  
+    </p>
+
+    <p style="margin-top:8px; font-size:0.75rem; color:#777;">
+        The clues are <strong>not in the same order</strong> as your guess.
+    </p>
+</div>
 
         <div style="background:#f9f9f9; padding:12px; border-radius:4px; font-size:0.8rem; color:#1a1a1a; line-height:1.4; margin:15px 0; border: 1px solid #eee;">
             <p style="margin:0 0 5px 0; font-weight:800; color:var(--sauce);">⚠️ The Shuffled Rule</p>
