@@ -231,6 +231,24 @@
             cursor: pointer;
         }
 
+        .site-link-wrap {
+            text-align: center;
+            padding: 8px 0 2px;
+            background: var(--pizzabg);
+        }
+
+        .site-link {
+            font-size: 0.9rem;
+            color: var(--sauce);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .site-link:hover,
+        .site-link:focus {
+            text-decoration: underline;
+        }
+
         .modal {
             display: none;
             position: fixed;
@@ -418,6 +436,12 @@
             <div id="share-icon" class="tool-btn" style="opacity:0.2; pointer-events:none;" onclick="share()">📤</div>
             <div class="tool-btn" onclick="toggleModal('stats-modal', true)">📊</div>
         </div>
+
+        <div class="site-link-wrap">
+            <a href="https://pizzabageldonut.com" target="_blank" rel="noopener noreferrer" class="site-link">
+                pizzabageldonut.com
+            </a>
+        </div>
     </div>
 </div>
 
@@ -503,7 +527,7 @@
         <div id="share-card-score" style="margin-top:10px; font-size:28px;"></div>
     </div>
     <div id="share-card-grid" style="margin:50px auto 30px; max-width:560px; display:flex; flex-direction:column; gap:14px;"></div>
-    <div style="margin-top:40px; text-align:center; font-size:24px; color:#666;">www.pizzabageldonut.com</div>
+    <div style="margin-top:40px; text-align:center; font-size:24px; color:#666;">pizzabageldonut.com</div>
 </div>
 
 <script>
@@ -1136,7 +1160,7 @@ async function share() {
             await navigator.share({
                 files: [file],
                 title: "Pizza Bagel Donut",
-                text: `I played Pizza Bagel Donut (${modeText})`
+                text: `I played Pizza Bagel Donut (${modeText})\n\nhttps://pizzabageldonut.com`
             });
             return;
         } catch (e) {
